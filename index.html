@@ -1,19 +1,416 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="AssistantX:  An LLM-Powered Proactive Assistant in Collaborative Human-Populated Environment">
+  <meta name="keywords" content="LLM, Proactive Assistant, Office Environment">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title style="letter-spacing: 0.1em; font-variant: small-caps;">AssistantX</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Google+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="scripts.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'YOUR-GA-ID');
+  </script>
+
+  <script>
+    // JavaScript functions for dynamic content (if needed)
+    // Placeholder for additional interactive functionality
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
-<body>
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>This is a simple webpage hosted on GitHub Pages.</p>
-</body>
-</html>
+<body onload="updateInteractive();">
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-fullhd">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">AssistantX:  An LLM-Powered Proactive Assistant in Collaborative Human-Populated Environment</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Nan Sun</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              Bo Mao</a><sup>2*</sup>,
+            </span>
+            <span class="author-block">
+              Yongchang Li</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://scholar.google.com/citations?user=OCauNHUAAAAJ&hl=en">Di Guo</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://sites.google.com/site/thuliuhuaping/home?authuser=0">Huaping Liu</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Department of Computer Science and Technology,
+Tsinghua University</span>
+            <span class="author-block"><sup>2</sup>School of Artificial Intelligence, Beijing University
+of Posts and Telecommunications</span>
+          </div>
+
+          <div class="is-size-6 publication-authors"> *Equal Contribution </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+<!--               <span class="link-block"> -->
+                <!-- PDF Link -->
+<!--                 <a target="_blank" href="AssistantX.pdf" -->
+<!--                    class="external-link button is-normal is-rounded is-dark"> -->
+<!--                   <span class="icon"> -->
+<!--                       <i class="fas fa-file-pdf"></i> -->
+<!--                   </span> -->
+<!--                   <span>Paper</span> -->
+<!--                 </a> -->
+<!--               </span> -->
+
+              <span class="link-block">
+<!--                 Arxiv Link -->
+                <a target="_blank" href="https://arxiv.org/abs/2409.17655#:~:text=In%20this%20paper,%20we%20introduce%20AssistantX,%20an%20LLM-powered"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file"></i>
+                  </span>
+                  <span>ArXiv</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <!-- Video Link -->
+                <a target="_blank" href="https://youtu.be/MaLJjBIgIi0"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <!-- Code Link -->
+                <a target="_blank" href="https://github.com/AssistantX-Agent/AssistantX"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered is-centered">
+          <video id="teaser" autoplay muted loop controls height="90%" width="90%" controlsList="nodownload">
+            <source src="videos/iros.mp4"
+                    type="video/mp4">
+          </video>
+          </br>
+        </div>
+        <br>
+        <h2 class="subtitle has-text-centered">
+          <span style="letter-spacing: 0.07em;">Assistant<span style="font-variant: small-caps; font-size: 1.2em;">X</span></span>. A description of the whole system of AssistantX. The video includes motivation, problem formulation, framework, datasets and example presentations.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-bottom: 1em;">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Current service robots suffer from limited natural language communication abilities, heavy reliance on predefined commands, ongoing human intervention, and, most notably, a lack of proactive collaboration awareness in human-populated environments. This results in narrow applicability and low utility. In this paper, we introduce AssistantX, an LLM-powered proactive assistant designed for autonomous operation in real- world scenarios with high accuracy. AssistantX employs a multi-agent framework consisting of 4 specialized LLM agents, each dedicated to perception, planning, decision-making, and reflective review, facilitating advanced inference capabilities and comprehensive collaboration awareness, much like a human assistant by your side. We built a dataset of 280 real-world tasks to validate AssistantX, which includes instruction content and status information on whether relevant personnel are available. Extensive experiments were conducted in both text-based simulations and a real office environment over the course of a month and a half. Our experiments demonstrate the effectiveness of the proposed framework, showing that AssistantX can reactively respond to user instructions, actively adjust strategies to adapt to contingencies, and proactively seek assistance from humans to ensure successful task completion.         </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+  <!-- Problem Formulation -->
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+      <!-- <h2 class="title is-3">Problem Formulation</h2> -->
+
+      <div class="container has-text-centered">
+        <h2 class="title is-3" style="margin-bottom: 1em;">Problem Formulation</h2>
+      </div>
+
+      <div class="image-container" style="text-align: center; margin: 1em 0;">
+        <img src="image/problem_formu.png" alt="Description of the image" style="width: 100%; height: auto; max-width: none;">
+      </div>
+      
+      <p class="content has-text-justified">
+        </span>When AssistantX receives an instruction, it will proactively perceive virtual environmental information and real-world environmental information, generating cyber and real-world tasks. AssistantX proficiently generates both cyber tasks TC and real-world tasks TR while executing them concurrently in a manner akin to a human assistant.
+
+      </div>
+  </div>
+
+  
+</section>
+  <!-- Framework -->
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+      <!-- <h2 class="title is-3">AssistantX Framework</h2> -->
+
+      <div class="container has-text-centered">
+        <h2 class="title is-3" style="margin-bottom: 1em;">AssistantX Framework</h2>
+      </div>
+
+      <div class="image-container" style="text-align: center; margin: 1em 0;">
+        <img src="image/method111.jpg" alt="Description of the image" style="width: 100%; height: auto; max-width: none;">
+      </div>
+      
+      <p class="content has-text-justified">
+        </span>Illustration of our PPDR4X framework (the multi-agent collaboration architecture of AssistantX.) In a given office scenario, PPDR4X is capable of accurately perceiving the surroundings and human intentions, thereby formulating comprehensive plans based on user instructions. It can also autonomously execute tasks and engage in self-reflection, even when the instructions are complex and lacking in detail. PPDR4X equips AssistantX with a problem-solving mindset similar to that of a human assistant, facilitating seamless integration into authentic work environments for autonomous effective interaction with other individuals. The components of PPDR4X include Memory Unit, Perception Agent, Planning Agent, Decision Agent and Reflection Agent.
+
+  </div>
+
+
+      
+</section>
+  <!-- thought -->
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+      <!-- <h2 class="title is-3">AssistantX Framework</h2> -->
+
+      <div class="container has-text-centered">
+        <h2 class="title is-3" style="margin-bottom: 1em;">Details of AssistantX agents</h2>
+      </div>
+
+      <div class="image-container" style="text-align: center; margin: 1em 0;">
+        <img src="image/agent_thought33.jpg" alt="Description of the image" style="width: 100%; height: auto; max-width: none;">
+      </div>
+      
+      <p class="content has-text-justified">
+        </span>An illustration of the inputs and outputs of PPDR agents, showing how they collaborate to determine the next move after the previous task, with all agents communicating in natural language, ensuring logical consistency and interpretability.
+  </div>
+
+
+</section>
+  <!-- outputs -->
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+      <!-- <h2 class="title is-3">AssistantX Framework</h2> -->
+
+      <div class="container has-text-centered">
+        <h2 class="title is-3" style="margin-bottom: 1em;">Outputs of AssistantX agents</h2>
+      </div>
+
+      <div class="image-container" style="text-align: center; margin: 1em 0;">
+        <img src="image/CaseStudy.jpg" alt="Description of the image" style="width: 100%; height: auto; max-width: none;">
+      </div>
+      
+      <p class="content has-text-justified">
+        </span>We demonstrate that AssistantX can reactively respond to Lee’s request and operate autonomously. When Mao is unavailable for printing, it actively searches memory for alternatives, identifying Wu. When Wu is also unavailable, AssistantX proactively seeks help in an active group chat to complete the complex task with human collaboration. Two representative inference processes showcasing the generation of proactive thoughts and behaviors are also presented.
+  </div>
+<!-- </section> -->
+  <!-- Framework -->
+<!-- <section class="section"> -->
+<!--   <div class="container is-max-desktop"> -->
+<!--     <div class="columns is-centered has-text-centered"> -->
+<!--       <div class="column is-four-fifths"> -->
+<!--         <h2 class="title is-3" style="margin-bottom: 1em;">AssistantX Framework</h2> -->
+<!--         <div class="image-container" style="display: flex; justify-content: center; margin: 2em 0;"> -->
+<!--           <img src="image/assistantfram.png" style="width: 150%; height: auto; max-width: none;"> -->
+<!--         </div> -->
+<!--         <div class="content has-text-justified"> -->
+<!--           <p> -->
+<!--             Illustration of our PPDR4X framework (the multi-agent collaboration architecture of AssistantX.) In a given office scenario, PPDR4X is capable of accurately perceiving the surroundings and human intentions, thereby formulating comprehensive plans based on user instructions. It can also autonomously execute tasks and engage in self-reflection, even when the instructions are complex and lacking in detail. PPDR4X equips AssistantX with a problem-solving mindset similar to that of a human assistant, facilitating seamless integration into authentic work environments for autonomous effective interaction with other individuals. The components of PPDR4X include Memory Unit, Perception Agent, Planning Agent, Decision Agent and Reflection Agent. -->
+
+<!--           </p> -->
+<!--         </div> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </section> -->
+
+  
+
+</section>
+  <!-- execute steps -->
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+      <!-- <h2 class="title is-3">Execution of an instruction</h2> -->
+
+      <div class="container has-text-centered">
+        <h2 class="title is-3" style="margin-bottom: 1em;">Execution of an instruction</h2>
+      </div>
+
+      <div class="image-container" style="text-align: center; margin: 1em 0;">
+        <img src="image/execute_step.jpg" alt="Description of the image" style="width: 100%; height: auto; max-width: none;">
+      </div>
+      
+      <p class="content has-text-centered">
+        </span>  We illustrate the comprehensive dialogue content and execution flow of the base instruction along with its three variants, while also offering a thorough evaluation of their respective difficulty levels.
+      </p>
+      
+      <div class="columns">
+        <div class="column has-text-centered">
+          <video id="dist1"
+            controls
+            muted
+            autoplay
+            loop controlsList="nodownload"
+            width="99%">
+            <source src="videos/demo_l3.mp4" 
+            type="video/mp4">
+          </video>
+          <p style="text-align:center">
+            Difficulty Level 3
+          </p>
+        </div>
+    
+        <div class="column has-text-centered">
+          <video id="dist2"
+            controls
+            muted
+            autoplay
+            loop controlsList="nodownload"
+            width="99%">
+            <source src="videos/demo_l4.mp4" 
+            type="video/mp4">
+          </video>
+          <p style="text-align:center">
+            Difficulty Level 4
+          </p>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column has-text-centered">
+          <video id="dist1"
+            controls
+            muted
+            autoplay
+            loop controlsList="nodownload"
+            width="99%">
+            <source src="videos/demo_l5.mp4" 
+            type="video/mp4">
+          </video>
+          <p style="text-align:center">
+            Difficulty Level 5
+          </p>
+        </div>
+    
+        <div class="column has-text-centered">
+          <video id="dist2"
+            controls
+            muted
+            autoplay
+            loop controlsList="nodownload"
+            width="99%">
+            <source src="videos/demo_l8.mp4" 
+            type="video/mp4">
+          </video>
+          <p style="text-align:center">
+            Difficulty Level 8
+          </p>
+        </div>
+      </div>
+  </div>
+
+      
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+
+
+    <!-- Further exploration. -->
+    <div class="rows is-centered ">
+      <div class="row is-full-width">
+        <div class="container has-text-centered">
+          <h2 class="title is-3" style="margin-bottom: 1em;"><span class="dperact" style="letter-spacing: 0.1em;">Further exploration</span></h2>
+          <!-- <h2 class="title is-3" style="margin-bottom: 1em;"><span class="dperact" style="letter-spacing: 0.1em;">Further exploration</span></h2> -->
+        </div>
+
+        <!-- Interpolating. -->
+        <div class="content has-text-justified">
+        <!-- <br> -->
+        </div>
+        <!-- <img src="media/videos/method_figure.gif" class="interpolation-image" /> -->
+        <!-- <img src="media/figures/method.jpg" class="interpolation-image" /> -->
+        <video src="videos/takeaway.mp4" class="interpolation-image" autoplay muted loop controls controlsList="nodownload"></video>
+          <p class="content has-text-justified">
+            By integrating a multimodal perception module into our multiagent framework, we also made further exploration of the abilities of AssistantX to handle more complex tasks that need interactions with the environments outside the office. Here is a brief presentation video of ordering takeaway online and delivering it directly to the user.
+          </p>
+          
+        </br>
+        </br>
+    </div>
+  </div>
+    
+</section>      
+  <!-- Paper video -->
+  <br>
+  <br>
+  <br>
+  <br>
+
+<!--   <div class="container is-max-widescreen"> -->
+<!--     <div class="rows"> -->
+<!--       <div class="container has-text-centered"><h2 class="title is-3" style="margin-bottom: 1em;">Video</h2></div> -->
+<!--        -->
+<!--       <div class="publication-video"> -->
+<!--         <iframe src="https://www.youtube.com/embed/yourvideo" -->
+<!--                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+<!--         -->
+<!--       </div> -->
+<!--     </div> -->
+<!--   </div> -->
