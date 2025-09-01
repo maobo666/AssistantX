@@ -167,15 +167,15 @@
 
 
 </section>
-  <!-- Problem Formulation -->
+  <!-- 项目背景 -->
 <section class="section">
   <div class="container is-max-widescreen">
 
     <div class="rows">
-      <!-- <h2 class="title is-3">Problem Formulation</h2> -->
+      <!-- <h2 class="title is-3">项目背景</h2> -->
 
       <div class="container has-text-centered">
-        <h2 class="title is-3" style="margin-bottom: 1em;">Problem Formulation</h2>
+        <h2 class="title is-3" style="margin-bottom: 1em;">项目背景</h2>
       </div>
 
       <div class="image-container" style="text-align: center; margin: 1em 0;">
@@ -183,22 +183,22 @@
       </div>
       
       <p class="content has-text-justified">
-        </span>When AssistantX receives an instruction, it will proactively perceive virtual environmental information and real-world environmental information, generating cyber and real-world tasks. AssistantX proficiently generates both cyber tasks TC and real-world tasks TR while executing them concurrently in a manner akin to a human assistant.
+        </span>随着人工智能和机器人技术的不断发展，服务机器人正逐步从结构化工业环境走向开放多样的家庭环境。在家庭环境中，家用电器作为人类生活中的重要组成部分，其种类繁多、功能复杂，如何让机器人高效、安全地操作各种家电，是推动家庭服务机器人广泛应用的关键问题之一。当前家用电器的交互面板常常多样复杂，人类依靠阅读说明书或通过历史经验推理操作逻辑来操作家电设备，但让机器人像人类一样通过“理解、阅读和推理”说明书进行操作，仍面临多重挑战（见图1）。首先，家电设备的说明书往往是非结构化的自然语言文本和符号，机器人难以理解和提取其中的操作步骤。其次，设备的内置系统对错误的容忍度很低，各类家电通常有严格限定的操作流程和模式，如果操作次序或方法不当可能无法完成任务。然后，面对缺少说明书的陌生设备时，机器人难以通过历史经验去推理设备的操作逻辑，导致机器人的通用性降低。现有研究表明，仅依靠大模型自身的常识来规划操作方案，往往不足以应对不同家电设备的操作任务。例如，在微波炉加热食物的情境中，大模型可能无法正确区分温度旋钮或定时旋钮，导致操作失败。此外，基于说明书的家电操作数据集和基准（如CheckManual）的发布，为这一领域的研究提供了重要的参考和评估标准。然而，在面对缺少说明书的家电设备时，此前的方法难以完成对应的操作任务。因此，本项目旨在构建一个能够自主学习家电操作的智能机器人系统。通过大模型技术赋能，该系统能够有效阅读、理解并总结家电说明书，自主推理设备操作逻辑，特别是在面对没有说明书的陌生设备时，依然能够规划、反思并控制机械臂完成操作任务。本项目不仅具有重要的学术价值，更将为家庭服务机器人在实际应用中的落地提供坚实基础。
 
       </div>
   </div>
 
   
 </section>
-  <!-- Framework -->
+  <!-- 总体方法 -->
 <section class="section">
   <div class="container is-max-widescreen">
 
     <div class="rows">
-      <!-- <h2 class="title is-3">AssistantX Framework</h2> -->
+      <!-- <h2 class="title is-3">总体方法</h2> -->
 
       <div class="container has-text-centered">
-        <h2 class="title is-3" style="margin-bottom: 1em;">AssistantX Framework</h2>
+        <h2 class="title is-3" style="margin-bottom: 1em;">总体方法</h2>
       </div>
 
       <div class="image-container" style="text-align: center; margin: 1em 0;">
@@ -206,22 +206,22 @@
       </div>
       
       <p class="content has-text-justified">
-        </span>Illustration of our PPDR4X framework (the multi-agent collaboration architecture of AssistantX.) In a given office scenario, PPDR4X is capable of accurately perceiving the surroundings and human intentions, thereby formulating comprehensive plans based on user instructions. It can also autonomously execute tasks and engage in self-reflection, even when the instructions are complex and lacking in detail. PPDR4X equips AssistantX with a problem-solving mindset similar to that of a human assistant, facilitating seamless integration into authentic work environments for autonomous effective interaction with other individuals. The components of PPDR4X include Memory Unit, Perception Agent, Planning Agent, Decision Agent and Reflection Agent.
+        </span>本项目整体技术方案由“说明书知识获取”和“多智能体决策执行”两大核心模块构成，形成从信息获取、任务规划到动作执行和反思优化的闭环体系，旨在实现机器人在有/无说明书条件下的家电操作能力。核心流程包括：1) 说明书知识获取：通过说明书泛化和网络搜索，获取目标设备的操作信息与功能知识。2) 多智能体协同操作：感知智能体、状态获取智能体、计划智能体、决策智能体及反思智能体协同完成家电面板识别、状态推理、操作规划、动作执行和任务反思。
 
   </div>
 
 
       
 </section>
-  <!-- thought -->
+  <!-- 说明书知识获取细节 -->
 <section class="section">
   <div class="container is-max-widescreen">
 
     <div class="rows">
-      <!-- <h2 class="title is-3">AssistantX Framework</h2> -->
+      <!-- <h2 class="title is-3">说明书知识获取细节</h2> -->
 
       <div class="container has-text-centered">
-        <h2 class="title is-3" style="margin-bottom: 1em;">Details of AssistantX agents</h2>
+        <h2 class="title is-3" style="margin-bottom: 1em;">说明书知识获取细节</h2>
       </div>
 
       <div class="image-container" style="text-align: center; margin: 1em 0;">
@@ -229,20 +229,20 @@
       </div>
       
       <p class="content has-text-justified">
-        </span>An illustration of the inputs and outputs of PPDR agents, showing how they collaborate to determine the next move after the previous task, with all agents communicating in natural language, ensuring logical consistency and interpretability.
+        </span>An illustration of the inputs and outputs of PPDR agents, showing how they collaborate to determine the next move after the previous task, with all agents communicating in natural language, ensuring logical consistency and interpretability.说明书总结智能体：多份同类手册抽取“部件—用法”→向量化相似度→贪心/HDBSCAN 聚类→统一命名与规则校验→合成通用说明书入库，用于同类新设备零样本适配。网络搜索智能体：库内泛化不足时触发；生成关键词→检索结果与摘要筛选→必要时爬取/PDF转文→多源融合去重→产出该类说明书并入库。
   </div>
 
 
 </section>
-  <!-- outputs -->
+  <!-- 家电操作多智能体细节 -->
 <section class="section">
   <div class="container is-max-widescreen">
 
     <div class="rows">
-      <!-- <h2 class="title is-3">AssistantX Framework</h2> -->
+      <!-- <h2 class="title is-3">家电操作多智能体细节</h2> -->
 
       <div class="container has-text-centered">
-        <h2 class="title is-3" style="margin-bottom: 1em;">Outputs of AssistantX agents</h2>
+        <h2 class="title is-3" style="margin-bottom: 1em;">家电操作多智能体细节</h2>
       </div>
 
       <div class="image-container" style="text-align: center; margin: 1em 0;">
@@ -250,7 +250,8 @@
       </div>
       
       <p class="content has-text-justified">
-        </span>We demonstrate that AssistantX can reactively respond to Lee’s request and operate autonomously. When Mao is unavailable for printing, it actively searches memory for alternatives, identifying Wu. When Wu is also unavailable, AssistantX proactively seeks help in an active group chat to complete the complex task with human collaboration. Two representative inference processes showcasing the generation of proactive thoughts and behaviors are also presented.
+        </span>感知智能体：OCR/检测定位控件；结合说明书+多模态模型提取“名称-功能-操作”；读取屏显/指示灯/旋钮等当前状态 → 输出初步设备模型与可用动作集。状态获取智能体：从说明书枚举全量状态变量；融合当前读数+历史动作推断缺失项 → 得到完整状态向量。计划智能体：基于用户目标+功能/状态+注意事项+历史/反思 → 生成步骤化计划（控件×动作×参数）。决策智能体：把计划映射为机器人动作；真实执行含三维定位（手眼标定）、路径规划、碰撞检测/避障 → 通过 MoveIt 完成点击/旋转等操作。反思智能体：执行后重感知比对预期；异常诊断→文字反馈给计划并迭代，直至成功/停止；经验回写知识库。闭环：感知 → 状态 → 计划 → 决策 → 反思，持续校正与沉淀。
+
   </div>
 <!-- </section> -->
   <!-- Framework -->
